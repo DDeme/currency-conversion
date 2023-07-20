@@ -11,7 +11,7 @@ interface props {
 
 export const ConversionResult = () => {
   return (
-    <Stat>
+    <Stat mt={10} mb={10}>
       <StatLabel>1.00 US Dollar =</StatLabel>
       <StatNumber>£2.00</StatNumber>
       <StatHelpText>1 EUR = 1.11833 USD</StatHelpText>
