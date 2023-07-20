@@ -3,6 +3,7 @@ import { history } from "./data";
 
 const prisma = new PrismaClient();
 
+// TODO: fix ts-node run
 const load = async () => {
   try {
     await prisma.history.deleteMany();
