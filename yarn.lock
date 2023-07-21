@@ -3499,6 +3499,19 @@
   dependencies:
     tslib "^2.4.0"
 
+"@tanstack/query-core@4.29.25":
+  version "4.29.25"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.29.25.tgz#605d357968a740544af6754004eed1dfd4587cb8"
+  integrity sha512-DI4y4VC6Uw4wlTpOocEXDky69xeOScME1ezLKsj+hOk7DguC9fkqXtp6Hn39BVb9y0b5IBrY67q6kIX623Zj4Q==
+
+"@tanstack/react-query@^4.29.25":
+  version "4.29.25"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.29.25.tgz#64df3260b65760fbd3c81ffae23b7b3802c71aa6"
+  integrity sha512-c1+Ezu+XboYrdAMdusK2fTdRqXPMgPAnyoTrzHOZQqr8Hqz6PNvV9DSKl8agUo6nXX4np7fdWabIprt+838dLg==
+  dependencies:
+    "@tanstack/query-core" "4.29.25"
+    use-sync-external-store "^1.2.0"
+
 "@testing-library/dom@^9.0.0":
   version "9.3.1"
   resolved "https://registry.yarnpkg.com/@testing-library/dom/-/dom-9.3.1.tgz#8094f560e9389fb973fe957af41bf766937a9ee9"
@@ -8917,6 +8930,11 @@ react-remove-scroll@^2.5.5:
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
 
+react-render-prop-type@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/react-render-prop-type/-/react-render-prop-type-0.1.0.tgz#c84e2e50885a43c49bc3611ce84dc1fe513f7b3b"
+  integrity sha512-eEbpOz/Yoz1jl7OQDm1rd/Gf+QqQHkr0I9sUAY3oQdEBJc2GChIVGCQHj6BiXzRr85g23hk4Nm8SSBhEp1Rkqw==
+
 react-select@5.7.0:
   version "5.7.0"
   resolved "https://registry.yarnpkg.com/react-select/-/react-select-5.7.0.tgz#82921b38f1fcf1471a0b62304da01f2896cd8ce6"
@@ -10252,6 +10270,11 @@ use-sidecar@^1.1.2:
   dependencies:
     detect-node-es "^1.1.0"
     tslib "^2.0.0"
+
+use-sync-external-store@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
+  integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
 
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"

@@ -1,27 +1,30 @@
-import {
-  Stat,
-  StatArrow,
-  StatGroup,
-  StatHelpText,
-  StatLabel,
-  StatNumber,
-} from "@chakra-ui/react";
+import { Stat, StatGroup, StatLabel, StatNumber } from "@chakra-ui/react";
 import React from "react";
 
-export const ConversionStats = () => {
+interface props {
+  totalConversions: number;
+  totalAmountInUSD: number;
+  mostPopularDestinationCurrency: string;
+}
+
+export const ConversionStats = ({
+  mostPopularDestinationCurrency,
+  totalAmountInUSD,
+  totalConversions,
+}: props) => {
   return (
     <StatGroup>
       <Stat>
-        <StatLabel>Most popular destination currency</StatLabel>
-        <StatNumber>$ USD</StatNumber>
+        <StatLabel>Most popular currency</StatLabel>
+        <StatNumber>{mostPopularDestinationCurrency}</StatNumber>
       </Stat>
       <Stat>
         <StatLabel>Total amount converted</StatLabel>
-        <StatNumber>345,670 $</StatNumber>
+        <StatNumber>{totalAmountInUSD} $</StatNumber>
       </Stat>
       <Stat>
         <StatLabel>Total conversions</StatLabel>
-        <StatNumber>345,670</StatNumber>
+        <StatNumber>{totalConversions}</StatNumber>
       </Stat>
     </StatGroup>
   );

@@ -7,4 +7,10 @@ const meta: Meta<typeof ConversionStats> = {
 
 export default meta;
 
-export const Default: StoryObj<typeof ConversionStats> = {};
+export const Default: StoryObj<typeof ConversionStats> = {
+  args: {
+    totalConversions: 2,
+    totalAmountInUSD: 106.58443,
+    mostPopularDestinationCurrency: "USD",
+  },
+};
