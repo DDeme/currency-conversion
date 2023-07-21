@@ -1,6 +1,6 @@
-import { Prisma } from "@prisma/client";
+const { Prisma } = require("@prisma/client");
 
-export const history = [
+const history = [
   {
     to: "USD",
     amountInUSD: new Prisma.Decimal(1500.95),
@@ -14,3 +14,7 @@ export const history = [
     amountInUSD: new Prisma.Decimal(100000),
   },
 ];
+
+module.exports = {
+  history,
+};
