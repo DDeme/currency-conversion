@@ -22,12 +22,13 @@ import { useQuery } from "@tanstack/react-query";
 import { CurrencyField } from "@/components/currency-field";
 import { useForm } from "react-hook-form";
 import { Footer } from "@/components/footer";
+import { Header } from "@/components/header/Header";
+import { ConversionForm } from "@/components/conversion-form";
 
 async function getData() {
   const res = await fetch("/api/stats");
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
-  debugger;
   // Recommendation: handle errors
   if (!res.ok) {
     // This will activate the closest `error.js` Error Boundary
@@ -48,38 +49,20 @@ export default function Home() {
     queryKey: ["stats"],
     queryFn: getData,
   });
-  const { control } = useForm();
   return (
     <GradientBg>
       <main>
         <Container maxW="container.md">
           <Flex p={4} h={"100vh"} direction={"column"} gap={10}>
-            <Box>
-              <Heading color={"gray.100"}>Purple Currency Conversion</Heading>
-              <Text color={"gray.100"}>
-                Best source for currency conversion and exchange rates
-              </Text>
-            </Box>
+            <Header />
             <Card>
               <CardBody>
-                <form
-                  noValidate
-                  // onSubmit={(event) => {
-                  //   void handleSubmit(onSubmit)(event);
-                  // }}
-                >
-                  <Flex flexDirection="column" gap="5">
-                    <CurrencyField
-                      name={"amount"}
-                      label="Amount"
-                      control={control}
-                    />
-                    <Button width="100%" colorScheme="purple" variant="outline">
-                      Convert
-                    </Button>
-                  </Flex>
-                </form>
-
+                <ConversionForm
+                  onSubmit={(values) => {
+                    debugger;
+                  }}
+                  isDisabled={false}
+                />
                 <ConversionResult />
               </CardBody>
             </Card>
