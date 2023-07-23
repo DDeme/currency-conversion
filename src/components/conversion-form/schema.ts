@@ -2,7 +2,7 @@ import { z } from "zod";
 
 export const schema = z
   .object({
-    amount: z.number(),
+    amount: z.number().gt(0),
     from: z.string(),
     to: z.string(),
   })

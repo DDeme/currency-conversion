@@ -15,8 +15,10 @@ interface Props {
 
 export const CurrencyInput = ({ value, onChange }: Props) => {
   const format = (val: number | null) => (val ? `` + val : 0);
-  // TODO: return null as empty value
-  const parse = (val: string) => parseInt(val.replace(/^\$/, ""));
+  const parse = (val: string) => {
+    const parsed = parseInt(val.replace(/^\$/, ""));
+    return isNaN(parsed) ? 0 : parsed;
+  };
 
   return (
     <NumberInput
