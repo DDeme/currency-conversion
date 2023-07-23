@@ -13,7 +13,7 @@ export const ConversionStats = ({
   totalConversions,
 }: props) => {
   return (
-    <StatGroup>
+    <StatGroup flexDirection={{ base: "column", sm: "row" }} gap={5}>
       <Stat>
         <StatLabel>Most popular currency</StatLabel>
         <StatNumber>{mostPopularDestinationCurrency}</StatNumber>

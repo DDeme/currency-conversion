@@ -52,23 +52,28 @@ export default function Home() {
   return (
     <GradientBg>
       <main>
-        <Container maxW="container.md">
-          <Flex p={4} h={"100vh"} direction={"column"} gap={10}>
+        <Container maxW="container.sm">
+          <Flex
+            pt={10}
+            pb={10}
+            minHeight={"100vh"}
+            direction={"column"}
+            gap={10}
+          >
             <Header />
             <Card>
               <CardBody>
                 <ConversionForm
                   onSubmit={(values) => {
-                    debugger;
+                    alert(JSON.stringify(values, 2));
                   }}
                   isDisabled={false}
                 />
-                <ConversionResult />
               </CardBody>
             </Card>
             <Spacer />
-
-            <Card mb={10}>
+            <Card>
+              {/* // TODO: make independent HOC for loading data */}
               <CardBody>
                 {isLoading ? (
                   <ConversionStatsSkeleton />
@@ -77,8 +82,8 @@ export default function Home() {
                 )}
               </CardBody>
             </Card>
+            <Footer />
           </Flex>
-          <Footer />
         </Container>
       </main>
     </GradientBg>

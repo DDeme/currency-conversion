@@ -9,7 +9,7 @@ import React from "react";
 
 export const ConversionStatsSkeleton = () => {
   return (
-    <StatGroup>
+    <StatGroup flexDirection={{ base: "column", sm: "row" }} gap={5}>
       <Stat>
         <StatLabel>Most popular currency</StatLabel>
         <StatNumber>

@@ -7,22 +7,22 @@ import {
 } from "@chakra-ui/react";
 
 import React from "react";
-import { FieldValues } from "react-hook-form";
-import { FormFieldProps } from "../form-field";
 
-export const CurrencyInput = <FormValues extends FieldValues>(
-  props: FormFieldProps<FormValues>
-) => {
-  const format = (val: string) => `$` + val;
+interface Props {
+  value: string | null;
+  onChange: (value: string | null) => void;
+}
+
+export const CurrencyInput = ({ value, onChange }: Props) => {
+  const format = (val: string | null) => `$` + val;
   const parse = (val: string) => val.replace(/^\$/, "");
-
-  const [value, setValue] = React.useState("1.53");
 
   return (
     <NumberInput
-      onChange={(valueString) => setValue(parse(valueString))}
-      value={value}
+      onChange={(valueString) => onChange(parse(valueString))}
+      value={format(value)}
       min={0}
+      w={"100%"}
     >
       <NumberInputField />
       <NumberInputStepper>

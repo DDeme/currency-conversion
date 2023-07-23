@@ -1,6 +1,11 @@
 import React from "react";
 
-import { GroupBase, OptionBase, Select } from "chakra-react-select";
+import {
+  ChakraStylesConfig,
+  GroupBase,
+  OptionBase,
+  Select,
+} from "chakra-react-select";
 
 interface CurrencyDetail {
   name: string;
@@ -1092,6 +1097,17 @@ type SelectOption = OptionBase & CurrencyDetail;
 export const CurrencySelect = ({ value, onChange, ...props }: Props) => {
   const selectedValue = options.find(({ code }) => code === value) ?? null;
 
+  const chakraStyles: ChakraStylesConfig<
+    SelectOption,
+    false,
+    GroupBase<SelectOption>
+  > = {
+    container: (provided, state) => ({
+      ...provided,
+      w: "full",
+    }),
+  };
+
   return (
     <Select<SelectOption, false, GroupBase<SelectOption>>
       placeholder="Select currency"
@@ -1103,6 +1119,8 @@ export const CurrencySelect = ({ value, onChange, ...props }: Props) => {
       getOptionValue={({ code }) => code}
       getOptionLabel={({ name, code }) => `${code} - ${name}`}
       blurInputOnSelect
+      selectedOptionColorScheme="purple"
+      chakraStyles={chakraStyles}
       {...props}
     />
   );
