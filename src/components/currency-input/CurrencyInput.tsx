@@ -9,13 +9,14 @@ import {
 import React from "react";
 
 interface Props {
-  value: string | null;
-  onChange: (value: string | null) => void;
+  value: number | null;
+  onChange: (value: number | null) => void;
 }
 
 export const CurrencyInput = ({ value, onChange }: Props) => {
-  const format = (val: string | null) => `$` + val;
-  const parse = (val: string) => val.replace(/^\$/, "");
+  const format = (val: number | null) => (val ? `$` + val : 0);
+  // TODO: return null as empty value
+  const parse = (val: string) => parseInt(val.replace(/^\$/, ""));
 
   return (
     <NumberInput
