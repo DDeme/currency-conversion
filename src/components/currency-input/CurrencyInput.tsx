@@ -14,7 +14,7 @@ interface Props {
 }
 
 export const CurrencyInput = ({ value, onChange }: Props) => {
-  const format = (val: number | null) => (val ? `$` + val : 0);
+  const format = (val: number | null) => (val ? `` + val : 0);
   // TODO: return null as empty value
   const parse = (val: string) => parseInt(val.replace(/^\$/, ""));
 

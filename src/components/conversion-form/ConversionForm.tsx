@@ -12,9 +12,14 @@ interface props {
 }
 
 export const ConversionForm = ({ onSubmit }: props) => {
-  const { handleSubmit, control, formState, reset } = useForm({
+  const { handleSubmit, control } = useForm({
     mode: "onChange",
     resolver: zodResolver(schema),
+    defaultValues: {
+      amount: 1000,
+      from: "CZK",
+      to: "EUR",
+    },
   });
 
   return (
