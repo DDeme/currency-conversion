@@ -10,7 +10,7 @@ export default meta;
 export const Default: StoryObj<typeof ConversionStats> = {
   args: {
     totalConversions: 2,
-    totalAmountInUSD: 106.58443,
+    totalAmountInUSD: 1000000.123456,
     mostPopularDestinationCurrency: "USD",
   },
 };

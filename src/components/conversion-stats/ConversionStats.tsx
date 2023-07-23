@@ -7,6 +7,11 @@ interface props {
   mostPopularDestinationCurrency: string;
 }
 
+const USDIntl = new Intl.NumberFormat("en-US", {
+  style: "currency",
+  currency: "USD",
+});
+
 export const ConversionStats = ({
   mostPopularDestinationCurrency,
   totalAmountInUSD,
@@ -20,7 +25,7 @@ export const ConversionStats = ({
       </Stat>
       <Stat>
         <StatLabel>Total amount converted</StatLabel>
-        <StatNumber>{totalAmountInUSD} $</StatNumber>
+        <StatNumber>{USDIntl.format(totalAmountInUSD)}</StatNumber>
       </Stat>
       <Stat>
         <StatLabel>Total conversions</StatLabel>
