@@ -107,6 +107,7 @@ export default function Home() {
                     });
                   }}
                   isDisabled={isLoading}
+                  isLoading={isLoading}
                 />
                 {isSuccess && data && (
                   <ConversionResult {...conversionData} {...data} />

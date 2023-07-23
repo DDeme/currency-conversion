@@ -6,13 +6,15 @@ import { CurrencySelectField } from "../currency-select-field";
 import { schema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { SubmitButton } from "../submit-button";
 
 interface Props {
   onSubmit: (val: z.infer<typeof schema>) => void;
   isDisabled: boolean;
+  isLoading: boolean;
 }
 
-export const ConversionForm = ({ onSubmit }: Props) => {
+export const ConversionForm = ({ onSubmit, isDisabled, isLoading }: Props) => {
   const { handleSubmit, control } = useForm({
     mode: "onChange",
     resolver: zodResolver(schema),
@@ -23,6 +25,12 @@ export const ConversionForm = ({ onSubmit }: Props) => {
     },
   });
 
+  const fieldProps = {
+    control,
+    isDisabled,
+    isRequired: true,
+  };
+
   return (
     <form
       noValidate
@@ -31,34 +39,11 @@ export const ConversionForm = ({ onSubmit }: Props) => {
       }}
     >
       <Flex flexDirection="column" gap="5">
-        <CurrencyField
-          name={"amount"}
-          label="Amount"
-          control={control}
-          isRequired
-        />
-        <CurrencySelectField
-          name={"from"}
-          label="From"
-          control={control}
-          isRequired
-        />
+        <CurrencyField name={"amount"} label="Amount" {...fieldProps} />
+        <CurrencySelectField name={"from"} label="From" {...fieldProps} />
         {/* TODO: add switch currencies button */}
-        <CurrencySelectField
-          name={"to"}
-          label="To"
-          control={control}
-          isRequired
-        />
-        {/* //TODO: add to separate submit component  */}
-        <Button
-          width="100%"
-          colorScheme="purple"
-          variant="outline"
-          type="submit"
-        >
-          Convert
-        </Button>
+        <CurrencySelectField name={"to"} label="To" {...fieldProps} />
+        <SubmitButton isLoading={isLoading} />
       </Flex>
     </form>
   );
