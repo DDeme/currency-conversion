@@ -10,6 +10,6 @@ export default meta;
 export const Default: StoryObj<typeof CurrencyInput> = {};
 export const SelectedValue: StoryObj<typeof CurrencyInput> = {
   args: {
-    value: "CZK",
+    value: 1000,
   },
 };
