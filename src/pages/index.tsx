@@ -91,6 +91,7 @@ export default function Home() {
             minHeight={"100vh"}
             direction={"column"}
             gap={10}
+            justifyContent={"center"}
           >
             <Header />
             <Card>
@@ -114,7 +115,6 @@ export default function Home() {
                 )}
               </CardBody>
             </Card>
-            <Spacer />
             <Card>
               {/* // TODO: make independent HOC for loading data , error boundary*/}
               <CardBody>
