@@ -21,10 +21,11 @@ export const ConversionResult = ({
   fromCode,
   toCode,
 }: Props) => {
+  const NumberFormatter = new Intl.NumberFormat("en-US");
   return (
     <Stat mt={5}>
       <StatLabel>
-        {amount} {fromCurrencyName} =
+        {NumberFormatter.format(amount)} {fromCurrencyName} =
       </StatLabel>
       <StatNumber>
         {result} {toSymbol}

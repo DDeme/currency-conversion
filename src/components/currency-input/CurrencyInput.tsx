@@ -9,14 +9,15 @@ import {
 import React from "react";
 
 interface Props {
-  value: number | null;
-  onChange: (value: number | null) => void;
+  value: number;
+  onChange: (value: number) => void;
 }
 
 export const CurrencyInput = ({ value, onChange }: Props) => {
-  const format = (val: number | null) => (val ? `` + val : 0);
+  const NumberFormatter = new Intl.NumberFormat("en-US");
+  const format = (val: number) => NumberFormatter.format(val);
   const parse = (val: string) => {
-    const parsed = parseInt(val.replace(/^\$/, ""));
+    const parsed = parseFloat(val.replace(/^\$/, ""));
     return isNaN(parsed) ? 0 : parsed;
   };
 
@@ -24,6 +25,8 @@ export const CurrencyInput = ({ value, onChange }: Props) => {
     <NumberInput
       onChange={(valueString) => onChange(parse(valueString))}
       value={format(value)}
+      inputMode="decimal"
+      precision={2}
       min={0}
       w={"100%"}
     >
