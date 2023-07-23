@@ -1,4 +1,4 @@
-import currenciesDetails from "./currencies.json";
+import { currenciesDetails } from "@/const";
 import { NextApiRequest, NextApiResponse } from "next/types";
 
 interface CurrencyDetail {
