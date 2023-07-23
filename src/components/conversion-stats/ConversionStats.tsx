@@ -1,7 +1,7 @@
 import { Stat, StatGroup, StatLabel, StatNumber } from "@chakra-ui/react";
 import React from "react";
 
-interface props {
+interface Props {
   totalConversions: number;
   totalAmountInUSD: number;
   mostPopularDestinationCurrency: string;
@@ -16,7 +16,7 @@ export const ConversionStats = ({
   mostPopularDestinationCurrency,
   totalAmountInUSD,
   totalConversions,
-}: props) => {
+}: Props) => {
   return (
     <StatGroup flexDirection={{ base: "column", sm: "row" }} gap={5}>
       <Stat>
