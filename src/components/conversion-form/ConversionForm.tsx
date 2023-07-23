@@ -43,7 +43,7 @@ export const ConversionForm = ({ onSubmit, isDisabled, isLoading }: Props) => {
         <CurrencySelectField name={"from"} label="From" {...fieldProps} />
         {/* TODO: add switch currencies button */}
         <CurrencySelectField name={"to"} label="To" {...fieldProps} />
-        <SubmitButton isLoading={isLoading} />
+        <SubmitButton isLoading={isLoading} isDisabled={isDisabled} />
       </Flex>
     </form>
   );
