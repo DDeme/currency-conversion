@@ -1,9 +1,12 @@
 import { PrismaClient } from "@prisma/client";
-import { NextRequest, NextResponse } from "next/server";
+import { NextApiRequest, NextApiResponse } from "next/types";
 
 const prisma = new PrismaClient();
 
-export default async function handler(req: NextRequest, res: NextResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== "GET") {
     throw new Error("Method not allowed");
   }
@@ -36,7 +39,7 @@ export default async function handler(req: NextRequest, res: NextResponse) {
   return res.status(200).json({
     totalConversions,
     totalAmountInUSD: totalAmountInUSD
-      ? parseFloat(totalAmountInUSD as unknown as string).toFixed(2)
+      ? parseFloat(totalAmountInUSD as unknown as string)
       : 0,
     mostPopularDestinationCurrency,
   });

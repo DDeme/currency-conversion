@@ -1,6 +1,5 @@
-import { NextRequest, NextResponse } from "next/server";
 import currenciesDetails from "./currencies.json";
-import { log } from "console";
+import { NextApiRequest, NextApiResponse } from "next/types";
 
 interface CurrencyDetail {
   name: string;
@@ -15,16 +14,15 @@ interface CurrencyApiResponse {
   [key: string]: CurrencyDetail;
 }
 
-export default async function handler(req: NextRequest, res: NextResponse) {
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   if (req.method !== "GET") {
     throw new Error("Method not allowed");
   }
   const response = await fetch(
-    `http://api.currencylayer.com/list?access_key=${process.env.CURRENCY_API_KEY}`,
-    {
-      method: "GET",
-      redirect: "follow",
-    }
+    `http://api.currencylayer.com/list?access_key=${process.env.CURRENCY_API_KEY}`
   );
 
   const { currencies: supportedCurrencies } = await response.json();
