@@ -1,7 +1,5 @@
 import { z } from "zod";
 
-// FIX: currencies cant be equal
-
 export const schema = z
   .object({
     amount: z.number(),
@@ -10,4 +8,5 @@ export const schema = z
   })
   .refine((schema) => schema.from !== schema.to, {
     message: "Currencies can`t be equal.",
+    path: ["to"],
   });

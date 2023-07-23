@@ -19,7 +19,7 @@ export const ConversionForm = ({ onSubmit, isDisabled, isLoading }: Props) => {
     mode: "onChange",
     resolver: zodResolver(schema),
     defaultValues: {
-      amount: 1000,
+      amount: 1,
       from: "CZK",
       to: "EUR",
     },
