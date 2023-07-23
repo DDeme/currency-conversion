@@ -13,6 +13,7 @@ import { ConversionForm } from "@/components/conversion-form";
 import { ConversionResult } from "@/components/conversion-result";
 import { useState } from "react";
 import { currencies } from "@/components/currency-select";
+import { AppContainer } from "@/components/app-container";
 
 async function getStats() {
   const res = await fetch("/api/stats");
@@ -57,21 +58,7 @@ export default function Home() {
     queryFn: getStats,
   });
 
-  const {
-    data,
-    error,
-    isError,
-    isIdle,
-    isLoading,
-    isPaused,
-    isSuccess,
-    failureCount,
-    failureReason,
-    mutate,
-    mutateAsync,
-    reset,
-    status,
-  } = useMutation({
+  const { data, isLoading, isSuccess, mutateAsync } = useMutation({
     mutationFn: getConversion,
     mutationKey: ["conversion"],
     onSuccess: () => {
@@ -82,53 +69,40 @@ export default function Home() {
   const [conversionData, setConversionData] = useState({});
 
   return (
-    <GradientBg>
-      <main>
-        <Container maxW="container.sm">
-          <Flex
-            pt={10}
-            pb={10}
-            minHeight={"100vh"}
-            direction={"column"}
-            gap={10}
-            justifyContent={"center"}
-          >
-            <Header />
-            <Card>
-              <CardBody>
-                <ConversionForm
-                  onSubmit={(values) => {
-                    mutateAsync(values);
-                    setConversionData({
-                      fromCurrencyName: currencies[values.from].name,
-                      toSymbol: currencies[values.to].symbol,
-                      amount: values.amount,
-                      fromCode: values.from,
-                      toCode: values.to,
-                    });
-                  }}
-                  isDisabled={isLoading}
-                  isLoading={isLoading}
-                />
-                {isSuccess && data && (
-                  <ConversionResult {...conversionData} {...data} />
-                )}
-              </CardBody>
-            </Card>
-            <Card>
-              {/* // TODO: make independent HOC for loading data , error boundary*/}
-              <CardBody>
-                {isLoadingStats ? (
-                  <ConversionStatsSkeleton />
-                ) : (
-                  <ConversionStats {...stats} />
-                )}
-              </CardBody>
-            </Card>
-            <Footer />
-          </Flex>
-        </Container>
-      </main>
-    </GradientBg>
+    <AppContainer>
+      <Header />
+      <Card>
+        <CardBody>
+          <ConversionForm
+            onSubmit={(values) => {
+              mutateAsync(values);
+              setConversionData({
+                fromCurrencyName: currencies[values.from].name,
+                toSymbol: currencies[values.to].symbol,
+                amount: values.amount,
+                fromCode: values.from,
+                toCode: values.to,
+              });
+            }}
+            isDisabled={isLoading}
+            isLoading={isLoading}
+          />
+          {isSuccess && data && (
+            <ConversionResult {...conversionData} {...data} />
+          )}
+        </CardBody>
+      </Card>
+      <Card>
+        {/* // TODO: make independent HOC for loading data , error boundary*/}
+        <CardBody>
+          {isLoadingStats ? (
+            <ConversionStatsSkeleton />
+          ) : (
+            <ConversionStats {...stats} />
+          )}
+        </CardBody>
+      </Card>
+      <Footer />
+    </AppContainer>
   );
 }
