@@ -1,7 +1,7 @@
 import { Stat, StatLabel, StatNumber, StatHelpText } from "@chakra-ui/react";
 import React from "react";
 
-interface props {
+interface Props {
   amount: number;
   result: number;
   quote: number;
@@ -20,7 +20,7 @@ export const ConversionResult = ({
   quote,
   fromCode,
   toCode,
-}: props) => {
+}: Props) => {
   return (
     <Stat mt={5}>
       <StatLabel>

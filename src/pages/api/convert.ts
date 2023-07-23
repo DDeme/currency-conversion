@@ -64,7 +64,6 @@ export default async function handler(
     to as string,
     amount as unknown as number,
   ];
-  console.log(queryArgs);
 
   queryArgs.forEach((param) => {
     if (!param || param === null) {

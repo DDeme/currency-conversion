@@ -5,13 +5,14 @@ import { useForm } from "react-hook-form";
 import { CurrencySelectField } from "../currency-select-field";
 import { schema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
-interface props {
-  onSubmit: (val: unknown) => void;
+interface Props {
+  onSubmit: (val: z.infer<typeof schema>) => void;
   isDisabled: boolean;
 }
 
-export const ConversionForm = ({ onSubmit }: props) => {
+export const ConversionForm = ({ onSubmit }: Props) => {
   const { handleSubmit, control } = useForm({
     mode: "onChange",
     resolver: zodResolver(schema),

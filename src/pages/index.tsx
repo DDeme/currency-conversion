@@ -1,31 +1,20 @@
 "use client";
-import {
-  Card,
-  Text,
-  CardBody,
-  Heading,
-  Container,
-  Box,
-  Button,
-  Flex,
-  Spacer,
-} from "@chakra-ui/react";
-import { CurrencyInput } from "@/components/currency-input/CurrencyInput";
-import { ConversionResult } from "@/components/conversion-result/ConversionResult";
+import { Card, CardBody, Container, Flex, Spacer } from "@chakra-ui/react";
 import { GradientBg } from "@/components/gradient-bg";
 import {
   ConversionStats,
   ConversionStatsSkeleton,
 } from "@/components/conversion-stats";
-import { CurrencySelect } from "@/components/currency-select";
-import { useQuery } from "@tanstack/react-query";
-import { CurrencyField } from "@/components/currency-field";
-import { useForm } from "react-hook-form";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header/Header";
 import { ConversionForm } from "@/components/conversion-form";
+import { ConversionResult } from "@/components/conversion-result";
+import { useState } from "react";
+import { currencies } from "@/components/currency-select";
 
-async function getData() {
+async function getStats() {
   const res = await fetch("/api/stats");
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
@@ -38,17 +27,60 @@ async function getData() {
   return res.json();
 }
 
+async function getConversion(queryParams: {
+  from: string;
+  to: string;
+  amount: number;
+}) {
+  const params = new URLSearchParams({
+    ...queryParams,
+    amount: `${queryParams.amount}`,
+  }).toString();
+
+  const res = await fetch(`/api/convert?${params}`);
+  // The return value is *not* serialized
+  // You can return Date, Map, Set, etc.
+  // Recommendation: handle errors
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
 export default function Home() {
-  //const data = await getData();
-  const {
-    isLoading,
-    isError,
-    data: stats,
-    error,
-  } = useQuery({
+  const queryClient = useQueryClient();
+
+  const { isLoading: isLoadingStats, data: stats } = useQuery({
     queryKey: ["stats"],
-    queryFn: getData,
+    queryFn: getStats,
   });
+
+  const {
+    data,
+    error,
+    isError,
+    isIdle,
+    isLoading,
+    isPaused,
+    isSuccess,
+    failureCount,
+    failureReason,
+    mutate,
+    mutateAsync,
+    reset,
+    status,
+  } = useMutation({
+    mutationFn: getConversion,
+    mutationKey: ["conversion"],
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ["stats"] });
+    },
+  });
+
+  const [conversionData, setConversionData] = useState({});
+
   return (
     <GradientBg>
       <main>
@@ -65,17 +97,27 @@ export default function Home() {
               <CardBody>
                 <ConversionForm
                   onSubmit={(values) => {
-                    alert(JSON.stringify(values, 2));
+                    mutateAsync(values);
+                    setConversionData({
+                      fromCurrencyName: currencies[values.from].name,
+                      toSymbol: currencies[values.to].symbol,
+                      amount: values.amount,
+                      fromCode: values.from,
+                      toCode: values.to,
+                    });
                   }}
-                  isDisabled={false}
+                  isDisabled={isLoading}
                 />
+                {isSuccess && data && (
+                  <ConversionResult {...conversionData} {...data} />
+                )}
               </CardBody>
             </Card>
             <Spacer />
             <Card>
-              {/* // TODO: make independent HOC for loading data */}
+              {/* // TODO: make independent HOC for loading data , error boundary*/}
               <CardBody>
-                {isLoading ? (
+                {isLoadingStats ? (
                   <ConversionStatsSkeleton />
                 ) : (
                   <ConversionStats {...stats} />

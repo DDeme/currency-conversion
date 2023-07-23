@@ -18,7 +18,7 @@ interface CurrencyDetail {
 }
 
 //TODO: clean up load up from api
-const currencies: { [index: string]: CurrencyDetail } = {
+export const currencies: { [index: string]: CurrencyDetail } = {
   AED: {
     name: "United Arab Emirates Dirham",
     symbol: "AED",
