@@ -1,6 +1,4 @@
-"use client";
-import { Card, CardBody, Container, Flex, Spacer } from "@chakra-ui/react";
-import { GradientBg } from "@/components/gradient-bg";
+import { Card, CardBody } from "@chakra-ui/react";
 import {
   ConversionStats,
   ConversionStatsSkeleton,
@@ -14,7 +12,8 @@ import { ConversionResult } from "@/components/conversion-result";
 import { useState } from "react";
 import { currencies } from "@/components/currency-select";
 import { AppContainer } from "@/components/app-container";
-
+import { ErrorBoundary } from "@/components/error-boudary";
+import { ErrorMessage } from "@/components/error-message";
 async function getStats() {
   const res = await fetch("/api/stats");
   // The return value is *not* serialized
@@ -73,34 +72,38 @@ export default function Home() {
       <Header />
       <Card>
         <CardBody>
-          <ConversionForm
-            onSubmit={(values) => {
-              mutateAsync(values);
-              setConversionData({
-                fromCurrencyName: currencies[values.from].name,
-                toSymbol: currencies[values.to].symbol,
-                amount: values.amount,
-                fromCode: values.from,
-                toCode: values.to,
-              });
-            }}
-            isDisabled={isLoading}
-            isLoading={isLoading}
-          />
-          {isSuccess && data && (
-            <ConversionResult {...conversionData} {...data} />
-          )}
+          <ErrorBoundary fallback={<ErrorMessage />}>
+            <ConversionForm
+              onSubmit={(values) => {
+                mutateAsync(values);
+                setConversionData({
+                  fromCurrencyName: currencies[values.from].name,
+                  toSymbol: currencies[values.to].symbol,
+                  amount: values.amount,
+                  fromCode: values.from,
+                  toCode: values.to,
+                });
+              }}
+              isDisabled={isLoading}
+              isLoading={isLoading}
+            />
+            {isSuccess && data && (
+              <ConversionResult {...conversionData} {...data} />
+            )}
+          </ErrorBoundary>
         </CardBody>
       </Card>
       <Card>
-        {/* // TODO: make independent HOC for loading data , error boundary*/}
-        <CardBody>
-          {isLoadingStats ? (
-            <ConversionStatsSkeleton />
-          ) : (
-            <ConversionStats {...stats} />
-          )}
-        </CardBody>
+        <ErrorBoundary fallback={<ErrorMessage />}>
+          {/* // TODO: make independent HOC for loading data , error boundary*/}
+          <CardBody>
+            {isLoadingStats ? (
+              <ConversionStatsSkeleton />
+            ) : (
+              <ConversionStats {...stats} />
+            )}
+          </CardBody>
+        </ErrorBoundary>
       </Card>
       <Footer />
     </AppContainer>
