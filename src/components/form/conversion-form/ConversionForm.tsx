@@ -1,12 +1,12 @@
 import { Button, Flex } from "@chakra-ui/react";
 import React from "react";
-import { CurrencyField } from "../currency-field";
+import { CurrencyField } from "../fields/currency-field";
 import { useForm } from "react-hook-form";
-import { CurrencySelectField } from "../currency-select-field";
+import { CurrencySelectField } from "../fields/currency-select-field";
 import { schema } from "./schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { SubmitButton } from "../submit-button";
+import { SubmitButton } from "../../submit-button";
 
 interface Props {
   onSubmit: (val: z.infer<typeof schema>) => void;
