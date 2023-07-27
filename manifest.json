@@ -1,0 +1,14 @@
+{
+  "bugfix/connect-convert-to-api": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "27328c6bdcbf8c9c8b2019404003abe9a4e5ab25",
+        "updatedAt": "2023-07-27T21:44:48.131Z",
+        "href": "bugfix/connect-convert-to-api/storybook/27328c",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/13",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/bugfix/connect-convert-to-api/storybook/27328c"
+      }
+    ]
+  }
+}
