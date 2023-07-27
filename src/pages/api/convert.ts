@@ -1,33 +1,36 @@
 import { PrismaClient } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next/types";
+import * as cheerio from "cheerio";
+import { multiply, round } from "mathjs";
 
 const prisma = new PrismaClient();
 
-const convertCurrency = async (from: string, to: string, amount: number) => {
-  // const response = await fetch(
-  //   `http://api.currencylayer.com/convert?from=${from}&to=${to}&amount=${amount}&access_key=${process.env.CURRENCY_API_KEY}`,
-  //   {
-  //     method: "GET",
-  //     redirect: "follow",
-  //   }
-  // );
+const parseHtmlResponse = (html: string, from: string, to: string): number => {
+  const $ = cheerio.load(html);
+  return parseFloat(
+    $(
+      `[data-source=${from}][data-target=${to}] > div > div > div:first-child`
+    ).text()
+  );
+};
 
-  // return await response.json();
-  // TODO: mock for now paid api
+export const fetchQuotePair = async (from: string, to: string) => {
+  const response = await fetch(`${process.env.CURRENCY_API_URL}${from}-${to}`);
+  const html = await response.text();
+  const quote = parseHtmlResponse(html, from, to);
+  return quote;
+};
+
+export const convertCurrency = async (
+  from: string,
+  to: string,
+  amount: number
+) => {
+  const quote = await fetchQuotePair(from, to);
+  const result = round(multiply(amount, quote), 2);
   return {
-    success: true,
-    terms: "https://currencylayer.com/terms",
-    privacy: "https://currencylayer.com/privacy",
-    query: {
-      from,
-      to,
-      amount: 10,
-    },
-    info: {
-      timestamp: 1430068515,
-      quote: 0.658443,
-    },
-    result: 6.58443,
+    quote,
+    result,
   };
 };
 
@@ -71,10 +74,7 @@ export default async function handler(
     }
   });
 
-  const {
-    info: { quote },
-    result,
-  } = await convertCurrency(...queryArgs);
+  const { quote, result } = await convertCurrency(...queryArgs);
   const amountInUSD = await getAmoutInUSD(...queryArgs, result);
 
   await prisma.history.create({

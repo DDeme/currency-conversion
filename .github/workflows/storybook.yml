@@ -1,7 +1,10 @@
-name: "Build and deploy storybook on PR"
+name: "Build and deploy storybook"
 on:
   pull_request:
     types: [labeled, unlabeled, opened, edited, closed, synchronize]
+  push:
+    branches:
+      - "main"
 
 jobs:
   storybook-preview:
