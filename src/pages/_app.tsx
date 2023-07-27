@@ -8,6 +8,7 @@ import {
 } from "@tanstack/react-query";
 import { AppProps } from "next/app";
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 type ReactQueryProps = {
   pageProps: {
@@ -18,13 +19,16 @@ function MyApp({ Component, pageProps }: AppProps & ReactQueryProps) {
   const [queryClient] = useState(() => new QueryClient());
 
   return (
-    <ChakraProvider>
-      <QueryClientProvider client={queryClient}>
-        <Hydrate state={pageProps.dehydratedState}>
-          <Component {...pageProps} />
-        </Hydrate>
-      </QueryClientProvider>
-    </ChakraProvider>
+    <>
+      <ChakraProvider>
+        <QueryClientProvider client={queryClient}>
+          <Hydrate state={pageProps.dehydratedState}>
+            <Component {...pageProps} />
+          </Hydrate>
+        </QueryClientProvider>
+      </ChakraProvider>
+      <Analytics />
+    </>
   );
 }
 
