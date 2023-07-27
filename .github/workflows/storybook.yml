@@ -28,7 +28,7 @@ jobs:
 #         if: github.event.action != 'closed'
       - name: Install dependencies checking cache hit
         run: yarn install --immutable
-        if: github.event.action != 'closed'
+#         if: github.event.action != 'closed'
 
       # This is how you'll use the action
       - name: build -> deploy storybook
