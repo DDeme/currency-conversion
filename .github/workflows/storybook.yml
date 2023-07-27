@@ -14,18 +14,18 @@ jobs:
         with:
           node-version-file: ".nvmrc"
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-        if: github.event.action != 'closed'
-      - uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-v??-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-v1-
-        if: github.event.action != 'closed'
+#       - name: Get yarn cache directory path
+#         id: yarn-cache-dir-path
+#         run: echo "::set-output name=dir::$(yarn cache dir)"
+#         if: github.event.action != 'closed'
+#       - uses: actions/cache@v2
+#         id: yarn-cache
+#         with:
+#           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+#           key: ${{ runner.os }}-yarn-v??-${{ hashFiles('**/yarn.lock') }}
+#           restore-keys: |
+#             ${{ runner.os }}-yarn-v1-
+#         if: github.event.action != 'closed'
       - name: Install dependencies checking cache hit
         run: yarn install --immutable
         if: github.event.action != 'closed'
@@ -39,7 +39,7 @@ jobs:
           apps: |
             {
               "storybook": {
-                "build": "node -v && yarn build-storybook",
+                "build": "yarn build-storybook",
                 "dist": "storybook-static"
               }
             }
