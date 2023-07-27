@@ -1119,7 +1119,7 @@ export const CurrencySelect = ({ value, onChange, ...props }: Props) => {
       getOptionValue={({ code }) => code}
       getOptionLabel={({ name, code }) => `${code} - ${name}`}
       blurInputOnSelect
-      selectedOptionColorScheme="purple"
+      selectedOptionColorScheme="blue"
       chakraStyles={chakraStyles}
       {...props}
     />

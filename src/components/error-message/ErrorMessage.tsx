@@ -14,12 +14,12 @@ export const ErrorMessage = () => {
         height="110"
       />
       <VStack alignItems="start" gap="2">
-        <Heading color="purple.700" size="xs">
+        <Heading color="blue.700" size="xs">
           There was an error
         </Heading>
         <Text>We are working to getting this fixed</Text>
         <Link href="/" passHref>
-          <Button colorScheme="purple" variant={"outline"} size="sm">
+          <Button colorScheme="blue" variant={"outline"} size="sm">
             Back to home
           </Button>
         </Link>

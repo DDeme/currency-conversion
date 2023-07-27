@@ -9,7 +9,7 @@ export const SubmitButton = ({
   return (
     <Button
       width="100%"
-      colorScheme="purple"
+      colorScheme="blue"
       variant="outline"
       type="submit"
       loadingText={loadingText}

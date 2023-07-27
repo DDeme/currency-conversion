@@ -9,7 +9,7 @@ export const GradientBg = ({
     <Box
       w="100%"
       h="100%"
-      bgGradient="linear(to-t, gray.900, green.800)"
+      bgGradient="linear(to-t, gray.900, blue.800)"
       {...props}
     >
       {children}
