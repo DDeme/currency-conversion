@@ -1,4 +1,4 @@
-name: 'Build and deploy storybook on PR'
+name: "Build and deploy storybook on PR"
 on:
   pull_request:
     types: [labeled, unlabeled, opened, edited, closed, synchronize]
@@ -9,6 +9,10 @@ jobs:
     name: Deploy storybook
     steps:
       - uses: actions/checkout@v2
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version-file: ".nvmrc"
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -30,7 +34,7 @@ jobs:
       - name: build -> deploy storybook
         uses: Sauloxd/review-apps@v2.0.0
         with:
-          branch: 'gh-pages'
+          branch: "gh-pages"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           apps: |
             {
