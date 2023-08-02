@@ -2,6 +2,7 @@ import MaskedInput from "react-text-mask";
 import createNumberMask from "text-mask-addons/dist/createNumberMask";
 import React from "react";
 import { Input } from "@chakra-ui/react";
+import { unknown } from "zod";
 
 interface Props {
   value: number;
@@ -36,7 +37,12 @@ export const CurrencyInput = ({ value, onChange }: Props) => {
       onChange={(event) => {
         onChange(deMask(event.target.value));
       }}
-      render={(ref, props) => <Input ref={ref} {...props} />}
+      render={(ref, props) => (
+        <Input
+          ref={ref as unknown as React.LegacyRef<HTMLInputElement> | undefined}
+          {...props}
+        />
+      )}
     />
   );
 };
