@@ -11,18 +11,6 @@
       }
     ]
   },
-  "renovate/eslint-8.x": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "bbdb350975245b76d9825aa5fd3cc4e258a2ef94",
-        "updatedAt": "2023-08-11T15:10:21.055Z",
-        "href": "renovate/eslint-8.x/storybook/bbdb35",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/14",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-8.x/storybook/bbdb35"
-      }
-    ]
-  },
   "renovate/node-20.x": {
     "apps": [
       {
