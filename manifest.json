@@ -46,17 +46,5 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/a38b87"
       }
     ]
-  },
-  "renovate/prisma-monorepo": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "1630fe3b55696b761973f5dfdb82d03cce5cdfab",
-        "updatedAt": "2023-08-22T18:14:11.548Z",
-        "href": "renovate/prisma-monorepo/storybook/1630fe",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/20",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/prisma-monorepo/storybook/1630fe"
-      }
-    ]
   }
 }
