@@ -11,18 +11,6 @@
       }
     ]
   },
-  "renovate/node-20.x": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "d61367dedf393a749503a37acf2d56a7b4a5ae4f",
-        "updatedAt": "2023-09-09T00:30:35.802Z",
-        "href": "renovate/node-20.x/storybook/d61367",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/27",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/d61367"
-      }
-    ]
-  },
   "renovate/typescript-5.x": {
     "apps": [
       {
