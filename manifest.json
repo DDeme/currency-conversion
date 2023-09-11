@@ -34,17 +34,5 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/typescript-5.x/storybook/d22182"
       }
     ]
-  },
-  "renovate/eslint-8.x": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "f8bb8e2437ca5d332cba87c9af505df2cf5daa25",
-        "updatedAt": "2023-09-08T21:37:05.114Z",
-        "href": "renovate/eslint-8.x/storybook/f8bb8e",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/26",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-8.x/storybook/f8bb8e"
-      }
-    ]
   }
 }
