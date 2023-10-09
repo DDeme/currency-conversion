@@ -70,5 +70,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-monorepo/storybook/9030d7"
       }
     ]
+  },
+  "renovate/node-20.x": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "a1141844422b8ddd8997a8c723af1ac0be58e26f",
+        "updatedAt": "2023-10-09T18:23:45.188Z",
+        "href": "renovate/node-20.x/storybook/a11418",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/39",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/a11418"
+      }
+    ]
   }
 }
