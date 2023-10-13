@@ -35,18 +35,6 @@
       }
     ]
   },
-  "renovate/nextjs-monorepo": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "c1e3e6f9fdd14650f970a0836bcb23ae0132b480",
-        "updatedAt": "2023-10-09T10:43:17.952Z",
-        "href": "renovate/nextjs-monorepo/storybook/c1e3e6",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/33",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/nextjs-monorepo/storybook/c1e3e6"
-      }
-    ]
-  },
   "renovate/node-20.x": {
     "apps": [
       {
