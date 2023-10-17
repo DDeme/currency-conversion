@@ -58,5 +58,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/nextjs-monorepo/storybook/04b71b"
       }
     ]
+  },
+  "renovate/major-tanstack-query-monorepo": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "14a21436029196ca11f2b87ea0a1bf92fce219a9",
+        "updatedAt": "2023-10-17T13:15:01.580Z",
+        "href": "renovate/major-tanstack-query-monorepo/storybook/14a214",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/41",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-tanstack-query-monorepo/storybook/14a214"
+      }
+    ]
   }
 }
