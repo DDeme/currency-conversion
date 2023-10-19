@@ -14,13 +14,13 @@ export const Default: StoryObj<typeof Card> = {
   },
 };
 
-const ComponentWithError = () => {
-  throw new Error("Whoops!");
-  return <>some text and error</>;
-};
+// const ComponentWithError = () => {
+//   throw new Error("Whoops!");
+//   return <>some text and error</>;
+// };
 
-export const Error: StoryObj<typeof Card> = {
-  args: {
-    children: <ComponentWithError />,
-  },
-};
+// export const Error: StoryObj<typeof Card> = {
+//   args: {
+//     children: <ComponentWithError />,
+//   },
+// };
