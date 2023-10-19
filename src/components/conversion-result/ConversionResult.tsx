@@ -10,7 +10,11 @@ import React from "react";
 
 type Props = {
   data: {
+<<<<<<< HEAD
     amount: number | null;
+=======
+    amount: number;
+>>>>>>> a96f305 (added testing and refactoring)
     result: number | null;
     quote: number | null;
     fromSymbol: string;
