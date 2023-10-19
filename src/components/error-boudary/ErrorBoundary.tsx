@@ -20,14 +20,14 @@ export class ErrorBoundary extends React.Component<Props, State> {
     return { hasError: true };
   }
 
-  //   componentDidCatch(error, info) {
-  //     // Example "componentStack":
-  //     //   in ComponentThatThrows (created by App)
-  //     //   in ErrorBoundary (created by App)
-  //     //   in div (created by App)
-  //     //   in App
-  //     logErrorToMyService(error, info.componentStack);
-  //   }
+  componentDidCatch(error: any, info: { componentStack: any }) {
+    // Example "componentStack":
+    //   in ComponentThatThrows (created by App)
+    //   in ErrorBoundary (created by App)
+    //   in div (created by App)
+    //   in App
+    console.warn(error, info.componentStack);
+  }
 
   render() {
     if (this.state.hasError) {

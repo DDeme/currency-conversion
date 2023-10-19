@@ -12,6 +12,7 @@ export const ErrorMessage = () => {
         alt="error illustration"
         width="110"
         height="110"
+        priority
       />
       <VStack alignItems="start" gap="2">
         <Heading color="blue.700" size="xs">

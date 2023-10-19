@@ -1,12 +1,13 @@
-import { Button } from "@chakra-ui/react";
+import { Button, VisuallyHidden } from "@chakra-ui/react";
 import React from "react";
 import { HiOutlineSwitchVertical } from "react-icons/hi";
 
-interface Props {
+type Props = {
   onClick: () => void;
-}
+  isDisabled: boolean;
+};
 
-export const SwitchCurrencyButton = ({ onClick }: Props) => {
+export const SwitchCurrencyButton = (props: Props) => {
   return (
     <Button
       width="auto"
@@ -14,11 +15,11 @@ export const SwitchCurrencyButton = ({ onClick }: Props) => {
       variant="outline"
       rounded="xl"
       size="md"
-      onClick={() => {
-        onClick();
-      }}
+      data-testid="SwitchCurrencyButton"
+      {...props}
     >
       <HiOutlineSwitchVertical />
+      <VisuallyHidden>Switch Currency</VisuallyHidden>
     </Button>
   );
 };

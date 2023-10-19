@@ -5,8 +5,8 @@ import { Input } from "@chakra-ui/react";
 import { unknown } from "zod";
 
 interface Props {
-  value: number;
-  onChange: (value: number) => void;
+  value: number | null;
+  onChange: (value: number | null) => void;
 }
 
 const defaultMaskOptions = {
@@ -23,8 +23,8 @@ const defaultMaskOptions = {
   inputMode: "numeric",
 };
 
-const deMask = (value: string): number =>
-  value ? parseFloat(value.replace(/[^0-9.]/g, "")) : 0;
+const deMask = (value: string): number | null =>
+  value ? parseFloat(value.replace(/[^0-9.]/g, "")) : null;
 
 export const CurrencyInput = ({ value, onChange }: Props) => {
   const currencyMask = createNumberMask({
@@ -33,7 +33,7 @@ export const CurrencyInput = ({ value, onChange }: Props) => {
   return (
     <MaskedInput
       mask={currencyMask}
-      value={value}
+      value={value === null ? "" : value}
       onChange={(event) => {
         onChange(deMask(event.target.value));
       }}

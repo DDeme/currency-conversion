@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { ComponentProps, useState } from "react";
 import { ConversionForm } from "../form";
 import { ErrorBoundary } from "../error-boudary";
 import { ConversionResult } from "../conversion-result";
@@ -39,13 +39,25 @@ export const Conversion = () => {
     },
   });
 
-  const [conversionData, setConversionData] = useState({});
+  const [conversionData, setConversionData] = useState<
+    ComponentProps<typeof ConversionResult>["data"]
+  >({
+    amount: 1000,
+    result: null,
+    quote: null,
+    fromCurrencyName: "US Dollar",
+    toSymbol: "€",
+    fromSymbol: "$",
+    fromCode: "USD",
+    toCode: "EUR",
+  });
   return (
     <>
       <ConversionForm
         onSubmit={(values) => {
           mutateAsync(values);
           setConversionData({
+            ...conversionData,
             fromCurrencyName: currencies[values.from].name,
             toSymbol: currencies[values.to].symbol,
             amount: values.amount,
@@ -53,10 +65,31 @@ export const Conversion = () => {
             toCode: values.to,
           });
         }}
+        onChange={(values) => {
+          setConversionData({
+            ...conversionData,
+            fromCurrencyName: currencies[values.from].name,
+            toSymbol: currencies[values.to].symbol,
+            amount: values.amount,
+            fromCode: values.from,
+            toCode: values.to,
+          });
+        }}
+        defaultValues={{
+          amount: conversionData.amount,
+          from: conversionData.fromCode,
+          to: conversionData.toCode,
+        }}
         isDisabled={isLoading}
         isLoading={isLoading}
       />
-      {isSuccess && data && <ConversionResult {...conversionData} {...data} />}
+      {isLoading && <ConversionResult data={{ ...conversionData }} isLoading />}
+      {isSuccess && data && (
+        <ConversionResult
+          data={{ ...conversionData, ...data }}
+          isLoading={false}
+        />
+      )}
     </>
   );
 };
