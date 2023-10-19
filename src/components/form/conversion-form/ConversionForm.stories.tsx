@@ -2,6 +2,7 @@ import { expect } from "@storybook/jest";
 import type { Meta, StoryObj } from "@storybook/react";
 import { ConversionForm } from "./ConversionForm";
 import { userEvent, waitFor, within } from "@storybook/testing-library";
+import { Mock } from "node:test";
 
 const meta: Meta<typeof ConversionForm> = {
   component: ConversionForm,
@@ -17,7 +18,7 @@ const meta: Meta<typeof ConversionForm> = {
 export default meta;
 
 export const Default: StoryObj<typeof ConversionForm> = {
-  play: async ({ args, canvasElement }) => {
+  play: async ({ args: onSubmit, canvasElement }) => {
     const canvas = within(canvasElement);
 
     const amountInput = canvas.getByDisplayValue("1,000");
@@ -40,8 +41,8 @@ export const Default: StoryObj<typeof ConversionForm> = {
     await userEvent.click(submitButton);
 
     await waitFor(async () => {
-      await expect(args.onSubmit).toHaveBeenCalledTimes(1);
-      await expect(args.onSubmit.mock.calls[0][0]).toEqual({
+      await expect(onSubmit).toHaveBeenCalledTimes(1);
+      await expect(onSubmit).toHaveBeenCalledWith({
         amount: 122,
         from: "EUR",
         to: "AED",

@@ -9,7 +9,7 @@ import { ErrorMessage } from "../error-message";
 async function getConversion(queryParams: {
   from: string;
   to: string;
-  amount: number;
+  amount: number | null;
 }) {
   const params = new URLSearchParams({
     ...queryParams,

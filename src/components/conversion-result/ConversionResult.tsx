@@ -10,7 +10,7 @@ import React from "react";
 
 type Props = {
   data: {
-    amount: number;
+    amount: number | null;
     result: number | null;
     quote: number | null;
     fromSymbol: string;
@@ -34,8 +34,10 @@ export const ConversionResult = ({
         <Flex>
           {isLoading ? (
             <Skeleton height="0.75rem" mt={1} mr={1} width="37px" />
-          ) : (
+          ) : amount ? (
             NumberFormatter.format(amount)
+          ) : (
+            ""
           )}{" "}
           {fromCurrencyName} =
         </Flex>
