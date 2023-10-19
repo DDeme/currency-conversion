@@ -47,18 +47,6 @@
       }
     ]
   },
-  "renovate/nextjs-monorepo": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "5c095cae4d771f2f855b84a914d0b55a804d5d4f",
-        "updatedAt": "2023-10-19T11:52:25.280Z",
-        "href": "renovate/nextjs-monorepo/storybook/5c095c",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/40",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/nextjs-monorepo/storybook/5c095c"
-      }
-    ]
-  },
   "renovate/major-tanstack-query-monorepo": {
     "apps": [
       {
