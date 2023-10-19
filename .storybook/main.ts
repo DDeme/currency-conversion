@@ -7,13 +7,31 @@ const config: StorybookConfig = {
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
     "@chakra-ui/storybook-addon",
+    "@storybook/addon-interactions",
+    {
+      name: "@storybook/addon-docs",
+      options: {
+        jsxOptions: {},
+        csfPluginOptions: null,
+        mdxPluginOptions: {},
+        transcludeMarkdown: true,
+      },
+    },
+    {
+      name: "@storybook/addon-coverage",
+      options: {
+        istanbul: {
+          include: ["**/stories/**"],
+        },
+      },
+    },
   ],
   framework: {
     name: "@storybook/nextjs",
     options: {},
   },
   docs: {
-    autodocs: "tag",
+    autodocs: true,
   },
 };
 export default config;

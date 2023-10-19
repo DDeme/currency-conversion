@@ -5,7 +5,10 @@ export const SubmitButton = ({
   children = "Convert",
   loadingText = "Converting ...",
   ...props
-}: ButtonProps) => {
+}: Pick<
+  ButtonProps,
+  "isLoading" | "isDisabled" | "loadingText" | "children"
+>) => {
   return (
     <Button
       width="100%"

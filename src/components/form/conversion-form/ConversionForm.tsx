@@ -9,26 +9,29 @@ import { z } from "zod";
 import { SubmitButton } from "../../submit-button";
 import { SwitchCurrencyButton } from "../../switch-curerncy-button";
 
-interface Props {
+type Props = {
   onSubmit: (val: z.infer<typeof schema>) => void;
+  onChange: (val: z.infer<typeof schema>) => void;
+  defaultValues: z.infer<typeof schema>;
   isDisabled: boolean;
   isLoading: boolean;
-}
+};
 
-export const ConversionForm = ({ onSubmit, isDisabled, isLoading }: Props) => {
+export const ConversionForm = ({
+  onSubmit,
+  isDisabled,
+  isLoading,
+  defaultValues,
+}: Props) => {
   const { handleSubmit, control, setValue, getValues } = useForm({
     mode: "onChange",
     resolver: zodResolver(schema),
-    defaultValues: {
-      amount: 1,
-      from: "CZK",
-      to: "EUR",
-    },
+    defaultValues,
   });
 
   const fieldProps = {
     control,
-    isDisabled,
+    isDisabled: isDisabled || isLoading,
     isRequired: true,
   };
 
@@ -49,6 +52,7 @@ export const ConversionForm = ({ onSubmit, isDisabled, isLoading }: Props) => {
               setValue("from", to);
               setValue("to", from);
             }}
+            isDisabled={isDisabled || isLoading}
           />
         </Flex>
         <CurrencySelectField name={"to"} label="To" {...fieldProps} />

@@ -1,36 +1,24 @@
-import { Stat, StatGroup, StatLabel, StatNumber } from "@chakra-ui/react";
-import React from "react";
+import { StatGroup } from "@chakra-ui/react";
+import React, { ReactNode } from "react";
+import { StatResult } from "../stat-result";
 
-interface Props {
-  totalConversions: number;
-  totalAmountInUSD: number;
-  mostPopularDestinationCurrency: string;
-}
+type ConversionStat = {
+  title: string;
+  value: string | ReactNode;
+};
 
-const USDIntl = new Intl.NumberFormat("en-US", {
-  style: "currency",
-  currency: "USD",
-});
+type Props = {
+  conversionStats: ConversionStat[];
+};
 
-export const ConversionStats = ({
-  mostPopularDestinationCurrency,
-  totalAmountInUSD,
-  totalConversions,
-}: Props) => {
+export const ConversionStats = ({ conversionStats }: Props) => {
   return (
     <StatGroup flexDirection={{ base: "column", sm: "row" }} gap={5}>
-      <Stat>
-        <StatLabel>Most popular currency</StatLabel>
-        <StatNumber>{mostPopularDestinationCurrency}</StatNumber>
-      </Stat>
-      <Stat>
-        <StatLabel>Total amount converted</StatLabel>
-        <StatNumber>{USDIntl.format(totalAmountInUSD)}</StatNumber>
-      </Stat>
-      <Stat>
-        <StatLabel>Total conversions</StatLabel>
-        <StatNumber>{totalConversions}</StatNumber>
-      </Stat>
+      {conversionStats.map(({ title, value }) => (
+        <StatResult key={title} title={title}>
+          {value}
+        </StatResult>
+      ))}
     </StatGroup>
   );
 };
