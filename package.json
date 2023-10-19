@@ -66,11 +66,7 @@
     "babel-plugin-istanbul": "^6.1.1",
     "eslint-plugin-storybook": "^0.6.15",
     "serve": "^14.2.1",
-<<<<<<< HEAD
     "storybook": "^7.6.6"
-=======
-    "storybook": "^7.1.0"
->>>>>>> 566821e (fix broken dependencies)
   },
   "resolutions": {
     "cli-table3": "^0.6.3"

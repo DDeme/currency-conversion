@@ -2,10 +2,6 @@ import { expect } from "@storybook/jest";
 import type { Meta, StoryObj } from "@storybook/react";
 import { ConversionForm } from "./ConversionForm";
 import { userEvent, waitFor, within } from "@storybook/testing-library";
-<<<<<<< HEAD
-import { Mock } from "node:test";
-=======
->>>>>>> a96f305 (added testing and refactoring)
 
 const meta: Meta<typeof ConversionForm> = {
   component: ConversionForm,
