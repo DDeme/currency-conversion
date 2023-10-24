@@ -70,5 +70,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/actions-setup-node-4.x/storybook/ace4c1"
       }
     ]
+  },
+  "renovate/node-20.x": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "2559152b4787d121f72408ee1e09f71280566ab9",
+        "updatedAt": "2023-10-24T02:09:15.445Z",
+        "href": "renovate/node-20.x/storybook/255915",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/49",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/255915"
+      }
+    ]
   }
 }
