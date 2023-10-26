@@ -94,5 +94,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/mathjs-11.x-lockfile/storybook/0a0095"
       }
     ]
+  },
+  "renovate/mathjs-12.x": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "502e576ad05b272badd55014040917eb033681fa",
+        "updatedAt": "2023-10-26T10:34:39.052Z",
+        "href": "renovate/mathjs-12.x/storybook/502e57",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/53",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/mathjs-12.x/storybook/502e57"
+      }
+    ]
   }
 }
