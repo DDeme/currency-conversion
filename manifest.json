@@ -112,7 +112,7 @@
       {
         "name": "storybook",
         "headCommitId": "4220f4cb93f2731c02d12e23a21b01f1f56c6d49",
-        "updatedAt": "2023-10-26T16:40:15.782Z",
+        "updatedAt": "2023-10-26T16:40:26.135Z",
         "href": "renovate/major-nextjs-monorepo/storybook/4220f4",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/12",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-nextjs-monorepo/storybook/4220f4"
