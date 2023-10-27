@@ -118,5 +118,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-nextjs-monorepo/storybook/3e6791"
       }
     ]
+  },
+  "renovate/chakra-react-select-4.x-lockfile": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "29268655741e0fe4c5e82be999a78628fde178a0",
+        "updatedAt": "2023-10-27T21:35:51.919Z",
+        "href": "renovate/chakra-react-select-4.x-lockfile/storybook/292686",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/54",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/chakra-react-select-4.x-lockfile/storybook/292686"
+      }
+    ]
   }
 }
