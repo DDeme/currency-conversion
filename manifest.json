@@ -106,5 +106,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-text-mask-5.x-lockfile/storybook/182b35"
       }
     ]
+  },
+  "renovate/storybook-monorepo": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "d4b9347f7c92bec9211dcb677bc4904525158292",
+        "updatedAt": "2023-11-08T13:04:29.686Z",
+        "href": "renovate/storybook-monorepo/storybook/d4b934",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/57",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/storybook-monorepo/storybook/d4b934"
+      }
+    ]
   }
 }
