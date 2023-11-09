@@ -87,11 +87,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "152d51194704d4e9f87c6840b57d7caf59f6ca95",
-        "updatedAt": "2023-11-09T12:34:06.932Z",
-        "href": "renovate/react-text-mask-5.x-lockfile/storybook/152d51",
+        "headCommitId": "0f56bb37206c6024eefa80d77fffe7cb3a67f67d",
+        "updatedAt": "2023-11-09T12:53:40.512Z",
+        "href": "renovate/react-text-mask-5.x-lockfile/storybook/0f56bb",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/56",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-text-mask-5.x-lockfile/storybook/152d51"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-text-mask-5.x-lockfile/storybook/0f56bb"
       }
     ]
   },
