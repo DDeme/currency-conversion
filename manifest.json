@@ -71,18 +71,6 @@
       }
     ]
   },
-  "renovate/major-nextjs-monorepo": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "0a4a432d25d98c6e63f89782206a34ab7bbb53d9",
-        "updatedAt": "2023-11-09T18:47:07.070Z",
-        "href": "renovate/major-nextjs-monorepo/storybook/0a4a43",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/12",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-nextjs-monorepo/storybook/0a4a43"
-      }
-    ]
-  },
   "renovate/react-text-mask-5.x-lockfile": {
     "apps": [
       {
