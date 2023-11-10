@@ -35,18 +35,6 @@
       }
     ]
   },
-  "renovate/actions-setup-node-4.x": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "9a29638b8566db42ca4023d12adf6a1c9ba5bb91",
-        "updatedAt": "2023-11-09T12:54:40.556Z",
-        "href": "renovate/actions-setup-node-4.x/storybook/9a2963",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/48",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/actions-setup-node-4.x/storybook/9a2963"
-      }
-    ]
-  },
   "renovate/prisma-monorepo": {
     "apps": [
       {
