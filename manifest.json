@@ -63,11 +63,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "ba83513589344679bd871ddabe73d9079dad5d57",
-        "updatedAt": "2023-11-10T12:56:48.537Z",
-        "href": "renovate/chakra-ui-monorepo/storybook/ba8351",
+        "headCommitId": "85c64b9aee35884b311a50f4f38ba6c4c18142eb",
+        "updatedAt": "2023-11-10T12:57:24.382Z",
+        "href": "renovate/chakra-ui-monorepo/storybook/85c64b",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/61",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/chakra-ui-monorepo/storybook/ba8351"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/chakra-ui-monorepo/storybook/85c64b"
       }
     ]
   }
