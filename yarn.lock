@@ -9623,10 +9623,10 @@ markdown-to-jsx@^7.1.8:
   resolved "https://registry.yarnpkg.com/markdown-to-jsx/-/markdown-to-jsx-7.3.2.tgz#f286b4d112dad3028acc1e77dfe1f653b347e131"
   integrity sha512-B+28F5ucp83aQm+OxNrPkS8z0tMKaeHiy0lHJs3LqCyDQFtWuenaIrkaVTgAm1pf1AU85LXltva86hlaT17i8Q==
 
-mathjs@^11.9.1:
-  version "11.12.0"
-  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-11.12.0.tgz#e933e5941930d44763ddfc5bfb08b90059449b2c"
-  integrity sha512-UGhVw8rS1AyedyI55DGz9q1qZ0p98kyKPyc9vherBkoueLntPfKtPBh14x+V4cdUWK0NZV2TBwqRFlvadscSuw==
+mathjs@^12.0.0:
+  version "12.0.0"
+  resolved "https://registry.yarnpkg.com/mathjs/-/mathjs-12.0.0.tgz#395b76c486df9a14d0841f7e4f2bbf9fbfba2a89"
+  integrity sha512-Oz3swPplNPe7taoP6WrkKhQzhDE2SwvOgLzu8H3EN+hEadw2GjEJUm6Xl+hrioHoB8g2BYb3gfw1glSzhdBKYw==
   dependencies:
     "@babel/runtime" "^7.23.2"
     complex.js "^2.1.1"
