@@ -4541,9 +4541,9 @@
   integrity sha512-vyv9knII8XeW8TnXDcGH7HqG6FeR56ESN6ExM34d/U8Zvs3xuG34euV6CVyB7KEYI7Ts4lQM8b4NL72e7UadnA==
 
 "@types/prop-types@*":
-  version "15.7.9"
-  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.9.tgz#b6f785caa7ea1fe4414d9df42ee0ab67f23d8a6d"
-  integrity sha512-n1yyPsugYNSmHgxDFjicaI2+gCNjsBck8UX9kuofAKlc0h1bL+20oSF72KeNaW2DUlesbEVCFgyV2dPGTiY42g==
+  version "15.7.10"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.10.tgz#892afc9332c4d62a5ea7e897fe48ed2085bbb08a"
+  integrity sha512-mxSnDQxPqsZxmeShFH+uwQ4kO4gcJcGahjjMFeLbKE95IAZiiZyiEepGZjtXJ7hN/yfu0bu9xN2ajcU0JcxX6A==
 
 "@types/qs@*", "@types/qs@^6.9.5":
   version "6.9.9"
@@ -4563,9 +4563,9 @@
     "@types/react" "*"
 
 "@types/react-text-mask@^5.4.11":
-  version "5.4.13"
-  resolved "https://registry.yarnpkg.com/@types/react-text-mask/-/react-text-mask-5.4.13.tgz#c355b782841e90b4d7d1186ec89fbcf41ddadbb8"
-  integrity sha512-e6JFMpvdu8V9Z06jg/KLcVp1EQE8wbFPQ18uZ3e99gsfXz/CfrSYmNZ1HXjdRKthAr/oEuJ5EbyVZLlEwnXRSA==
+  version "5.4.14"
+  resolved "https://registry.yarnpkg.com/@types/react-text-mask/-/react-text-mask-5.4.14.tgz#eb7d7b2a47e41b76c6473f106238493e207d3ee1"
+  integrity sha512-VkQuH+7Ol+ue/EFe9EFqJAmDe3ay5VML29l3aJkdzAriMhiprJOmdAFjZ3jOT6p3+nBgEUHxaQtUgg8k8Sk5wA==
   dependencies:
     "@types/react" "*"
 
@@ -4576,16 +4576,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*":
-  version "18.2.33"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.33.tgz#055356243dc4350a9ee6c6a2c07c5cae12e38877"
-  integrity sha512-v+I7S+hu3PIBoVkKGpSYYpiBT1ijqEzWpzQD62/jm4K74hPpSP7FF9BnKG6+fg2+62weJYkkBWDJlZt5JO/9hg==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@18.2.37":
+"@types/react@*", "@types/react@18.2.37":
   version "18.2.37"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.37.tgz#0f03af69e463c0f19a356c2660dbca5d19c44cae"
   integrity sha512-RGAYMi2bhRgEXT3f4B92WTohopH6bIXw05FuGlmJEnv/omEn190+QYEIYxIAuIBdKgboYYdVved2p1AxZVQnaw==
@@ -4604,9 +4595,9 @@
     csstype "^3.0.2"
 
 "@types/scheduler@*":
-  version "0.16.5"
-  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.5.tgz#4751153abbf8d6199babb345a52e1eb4167d64af"
-  integrity sha512-s/FPdYRmZR8SjLWGMCuax7r3qCWQw9QKHzXVukAuuIJkXkDRwp+Pu5LMIVFi0Fxbav35WURicYr8u1QsoybnQw==
+  version "0.16.6"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.6.tgz#eb26db6780c513de59bee0b869ef289ad3068711"
+  integrity sha512-Vlktnchmkylvc9SnwwwozTv04L/e1NykF5vgoQ0XTmI8DD+wxfjQuHuvHS3p0r2jz2x2ghPs2h1FVeDirIteWA==
 
 "@types/semver@^7.3.12", "@types/semver@^7.3.4":
   version "7.5.4"
