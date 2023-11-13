@@ -58,17 +58,5 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-8.x/storybook/810145"
       }
     ]
-  },
-  "renovate/chakra-ui-monorepo": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "85c64b9aee35884b311a50f4f38ba6c4c18142eb",
-        "updatedAt": "2023-11-10T12:57:24.382Z",
-        "href": "renovate/chakra-ui-monorepo/storybook/85c64b",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/61",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/chakra-ui-monorepo/storybook/85c64b"
-      }
-    ]
   }
 }
