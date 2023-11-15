@@ -47,18 +47,6 @@
       }
     ]
   },
-  "renovate/storybook-test-runner-0.x-lockfile": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "292c1c0ae471c6da0f253272506975bf59db59a7",
-        "updatedAt": "2023-11-15T10:32:09.126Z",
-        "href": "renovate/storybook-test-runner-0.x-lockfile/storybook/292c1c",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/62",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/storybook-test-runner-0.x-lockfile/storybook/292c1c"
-      }
-    ]
-  },
   "renovate/framer-motion-10.x-lockfile": {
     "apps": [
       {
