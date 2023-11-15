@@ -46,17 +46,5 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/framer-motion-10.x-lockfile/storybook/9d54ee"
       }
     ]
-  },
-  "renovate/react-icons-4.x-lockfile": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "d3bf71a602dfa73bd53524d8102d56484c68b8a8",
-        "updatedAt": "2023-11-15T14:12:05.596Z",
-        "href": "renovate/react-icons-4.x-lockfile/storybook/d3bf71",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/64",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-icons-4.x-lockfile/storybook/d3bf71"
-      }
-    ]
   }
 }
