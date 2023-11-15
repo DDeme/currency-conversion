@@ -51,11 +51,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "c69a40d612bdb4bb974ab1ff741a09652d725b5e",
-        "updatedAt": "2023-11-15T10:32:26.904Z",
-        "href": "renovate/framer-motion-10.x-lockfile/storybook/c69a40",
+        "headCommitId": "747dbd7b29696be2458846d21632f089855ef70d",
+        "updatedAt": "2023-11-15T10:44:18.018Z",
+        "href": "renovate/framer-motion-10.x-lockfile/storybook/747dbd",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/63",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/framer-motion-10.x-lockfile/storybook/c69a40"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/framer-motion-10.x-lockfile/storybook/747dbd"
       }
     ]
   },
