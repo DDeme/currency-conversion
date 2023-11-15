@@ -51,11 +51,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "027f412a7b1e922ee3eada67e47f3f6104808f2c",
-        "updatedAt": "2023-11-15T10:43:59.175Z",
-        "href": "renovate/react-icons-4.x-lockfile/storybook/027f41",
+        "headCommitId": "b61ce5a54f20db8abebbbcbfe1d1aa1831b5ea53",
+        "updatedAt": "2023-11-15T13:11:45.820Z",
+        "href": "renovate/react-icons-4.x-lockfile/storybook/b61ce5",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/64",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-icons-4.x-lockfile/storybook/027f41"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-icons-4.x-lockfile/storybook/b61ce5"
       }
     ]
   },
