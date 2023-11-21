@@ -60,7 +60,7 @@
     "@storybook/jest": "^0.2.3",
     "@storybook/nextjs": "^7.1.0",
     "@storybook/react": "^7.1.0",
-    "@storybook/test-runner": "^0.14.0",
+    "@storybook/test-runner": "^0.15.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/react-text-mask": "^5.4.11",
     "babel-plugin-istanbul": "^6.1.1",
