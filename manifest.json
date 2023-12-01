@@ -82,5 +82,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/storybook-addon-onboarding-1.x-lockfile/storybook/8becc9"
       }
     ]
+  },
+  "renovate/node-20.x": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "80c7777a85146e4dce9e2edfedc7ae677fdb4905",
+        "updatedAt": "2023-12-01T21:35:51.232Z",
+        "href": "renovate/node-20.x/storybook/80c777",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/83",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/80c777"
+      }
+    ]
   }
 }
