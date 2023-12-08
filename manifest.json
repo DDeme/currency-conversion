@@ -118,5 +118,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/nextjs-monorepo/storybook/253218"
       }
     ]
+  },
+  "renovate/ts-node-10.x-lockfile": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "6e03d2617c5afd3ddc6248eeaca931d3f1010a3c",
+        "updatedAt": "2023-12-08T13:29:34.185Z",
+        "href": "renovate/ts-node-10.x-lockfile/storybook/6e03d2",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/89",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/ts-node-10.x-lockfile/storybook/6e03d2"
+      }
+    ]
   }
 }
