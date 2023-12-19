@@ -6,7 +6,7 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-onboarding",
     "@storybook/addon-interactions",
-    "@chakra-ui/storybook-addon",
+    // "@chakra-ui/storybook-addon",
     "@storybook/addon-interactions",
     {
       name: "@storybook/addon-docs",
