@@ -130,5 +130,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/mathjs-12.x-lockfile/storybook/5f1af2"
       }
     ]
+  },
+  "renovate/emotion-monorepo": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "20e8eab295bd4e827aea8758b98b7d6cfa347940",
+        "updatedAt": "2023-12-23T21:14:57.111Z",
+        "href": "renovate/emotion-monorepo/storybook/20e8ea",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/92",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/emotion-monorepo/storybook/20e8ea"
+      }
+    ]
   }
 }
