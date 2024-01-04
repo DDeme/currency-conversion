@@ -130,17 +130,5 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/emotion-monorepo/storybook/2fd48d"
       }
     ]
-  },
-  "renovate/hookform-resolvers-3.x-lockfile": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "3d391dbdecb706b60e391ac18c47af0994066b28",
-        "updatedAt": "2024-01-04T10:31:36.168Z",
-        "href": "renovate/hookform-resolvers-3.x-lockfile/storybook/3d391d",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/96",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/hookform-resolvers-3.x-lockfile/storybook/3d391d"
-      }
-    ]
   }
 }
