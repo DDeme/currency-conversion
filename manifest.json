@@ -130,5 +130,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/emotion-monorepo/storybook/04405d"
       }
     ]
+  },
+  "renovate/react-hook-form-7.x-lockfile": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "d779e0fa9dcb1025b590ca6a0eba5490b4a46aee",
+        "updatedAt": "2024-01-08T22:33:11.777Z",
+        "href": "renovate/react-hook-form-7.x-lockfile/storybook/d779e0",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/97",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-hook-form-7.x-lockfile/storybook/d779e0"
+      }
+    ]
   }
 }
