@@ -130,5 +130,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/prisma-monorepo/storybook/b686e8"
       }
     ]
+  },
+  "renovate/vercel-analytics-1.x-lockfile": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "423488658f48bb16c9d1d6532de8057144e120ad",
+        "updatedAt": "2024-01-26T15:00:45.105Z",
+        "href": "renovate/vercel-analytics-1.x-lockfile/storybook/423488",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/101",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/vercel-analytics-1.x-lockfile/storybook/423488"
+      }
+    ]
   }
 }
