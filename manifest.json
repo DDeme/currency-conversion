@@ -71,18 +71,6 @@
       }
     ]
   },
-  "renovate/typescript-5.x": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "52e2dc7a69efa2d3132d938fd99b891262b7d60b",
-        "updatedAt": "2024-01-04T14:53:26.166Z",
-        "href": "renovate/typescript-5.x/storybook/52e2dc",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/87",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/typescript-5.x/storybook/52e2dc"
-      }
-    ]
-  },
   "renovate/ts-node-10.x-lockfile": {
     "apps": [
       {
