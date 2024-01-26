@@ -119,18 +119,6 @@
       }
     ]
   },
-  "renovate/react-hook-form-7.x-lockfile": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "a6b1f9c8681cca0b29f4cfe21c8726834132c9aa",
-        "updatedAt": "2024-01-26T14:52:51.802Z",
-        "href": "renovate/react-hook-form-7.x-lockfile/storybook/a6b1f9",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/97",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-hook-form-7.x-lockfile/storybook/a6b1f9"
-      }
-    ]
-  },
   "renovate/prisma-monorepo": {
     "apps": [
       {
