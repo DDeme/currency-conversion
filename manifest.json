@@ -87,11 +87,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "8e3075dcc9f9d8c2d3dce2196adef5f2279dc1d7",
-        "updatedAt": "2024-01-26T14:52:34.003Z",
-        "href": "renovate/storybook-addon-onboarding-1.x-lockfile/storybook/8e3075",
+        "headCommitId": "2c95c1efeb041e8ce99e3136f2038cccecb4b975",
+        "updatedAt": "2024-01-26T15:00:35.465Z",
+        "href": "renovate/storybook-addon-onboarding-1.x-lockfile/storybook/2c95c1",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/100",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/storybook-addon-onboarding-1.x-lockfile/storybook/8e3075"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/storybook-addon-onboarding-1.x-lockfile/storybook/2c95c1"
       }
     ]
   },
