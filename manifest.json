@@ -135,11 +135,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "d0570190e9d1699abb958582e9b9ae57aad6f508",
-        "updatedAt": "2024-02-19T13:45:34.382Z",
-        "href": "renovate/vercel-analytics-1.x-lockfile/storybook/d05701",
+        "headCommitId": "a9f5285190fe65d602c390dfcc49505a601ac39a",
+        "updatedAt": "2024-02-20T14:22:52.263Z",
+        "href": "renovate/vercel-analytics-1.x-lockfile/storybook/a9f528",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/101",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/vercel-analytics-1.x-lockfile/storybook/d05701"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/vercel-analytics-1.x-lockfile/storybook/a9f528"
       }
     ]
   }
