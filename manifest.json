@@ -142,5 +142,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/vercel-analytics-1.x-lockfile/storybook/a9f528"
       }
     ]
+  },
+  "feature/added-storybook-refactoring": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "02483ec6ba80d38fbb230e5a78977fcf21e00f2a",
+        "updatedAt": "2024-03-01T16:47:45.812Z",
+        "href": "feature/added-storybook-refactoring/storybook/02483e",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/102",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/feature/added-storybook-refactoring/storybook/02483e"
+      }
+    ]
   }
 }
