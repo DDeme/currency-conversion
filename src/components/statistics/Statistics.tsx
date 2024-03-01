@@ -37,36 +37,35 @@ export const Statistics = () => {
     : "";
   const totalConversions = data?.totalConversions;
 
-  const results =
-    isLoading && data
-      ? [
-          {
-            title: "Most popular currency",
-            value: mostPopularDestinationCurrency,
-          },
-          {
-            title: "Total amount converted",
-            value: totalAmountInUSD,
-          },
-          {
-            title: "Total amount converted",
-            value: totalConversions,
-          },
-        ]
-      : [
-          {
-            title: "Most popular currency",
-            value: <Skeleton height="1.5rem" mt={2} mb={2} width="50px" />,
-          },
-          {
-            title: "Total amount converted",
-            value: <Skeleton height="1.5rem" mt={2} mb={2} width="80px" />,
-          },
-          {
-            title: "Total amount converted",
-            value: <Skeleton height="1.5rem" mt={2} mb={2} width="120px" />,
-          },
-        ];
+  const results = isLoading
+    ? [
+        {
+          title: "Most popular currency",
+          value: mostPopularDestinationCurrency,
+        },
+        {
+          title: "Total amount converted",
+          value: totalAmountInUSD,
+        },
+        {
+          title: "Total amount converted",
+          value: totalConversions,
+        },
+      ]
+    : [
+        {
+          title: "Most popular currency",
+          value: <Skeleton height="1.5rem" mt={2} mb={2} width="50px" />,
+        },
+        {
+          title: "Total amount converted",
+          value: <Skeleton height="1.5rem" mt={2} mb={2} width="80px" />,
+        },
+        {
+          title: "Total amount converted",
+          value: <Skeleton height="1.5rem" mt={2} mb={2} width="120px" />,
+        },
+      ];
 
   return <ConversionStats conversionStats={results} />;
 };
