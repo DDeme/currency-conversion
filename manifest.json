@@ -142,5 +142,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/vercel-analytics-1.x-lockfile/storybook/a9f528"
       }
     ]
+  },
+  "renovate/eslint-8.x": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "57aecf83c33b4967b85b1e99f76731ab8904f596",
+        "updatedAt": "2024-03-01T16:51:21.790Z",
+        "href": "renovate/eslint-8.x/storybook/57aecf",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/103",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-8.x/storybook/57aecf"
+      }
+    ]
   }
 }
