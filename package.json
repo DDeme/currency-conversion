@@ -15,7 +15,8 @@
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
     "seed": "node prisma/seed.js",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "chromatic": "npx chromatic --project-token=chpt_aa29d860fcb5fe3"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.1.0",
