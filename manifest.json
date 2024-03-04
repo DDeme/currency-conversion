@@ -147,11 +147,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "a7d35192efdcdf67f0bfb0f4389c0ec86a2086cc",
-        "updatedAt": "2024-03-04T15:10:21.287Z",
-        "href": "renovate/eslint-plugin-storybook-0.x/storybook/a7d351",
+        "headCommitId": "c4156c10ca7f79e5f0fbe26847ad35d1a1c9e82c",
+        "updatedAt": "2024-03-04T16:27:21.202Z",
+        "href": "renovate/eslint-plugin-storybook-0.x/storybook/c4156c",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/105",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-plugin-storybook-0.x/storybook/a7d351"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-plugin-storybook-0.x/storybook/c4156c"
       }
     ]
   },
