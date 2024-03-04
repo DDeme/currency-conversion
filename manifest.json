@@ -190,17 +190,5 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/actions-cache-4.x/storybook/0dc1a1"
       }
     ]
-  },
-  "renovate/framer-motion-11.x": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "b6f3f8008102ebeb0860237fd3be33df13a505a1",
-        "updatedAt": "2024-03-04T14:42:26.021Z",
-        "href": "renovate/framer-motion-11.x/storybook/b6f3f8",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/107",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/framer-motion-11.x/storybook/b6f3f8"
-      }
-    ]
   }
 }
