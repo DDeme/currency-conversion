@@ -13,12 +13,18 @@ const meta: Meta<typeof ConversionForm> = {
       to: "EUR",
     },
   },
+  argTypes: {
+    onSubmit: { action: true },
+  },
 };
 
 export default meta;
 
 export const Default: StoryObj<typeof ConversionForm> = {
-  play: async ({ args, canvasElement }) => {
+  args: {
+    onSubmit: jest.fn(),
+  },
+  play: async ({ args: { onSubmit }, canvasElement }) => {
     const canvas = within(canvasElement);
 
     const amountInput = canvas.getByDisplayValue("1,000");
@@ -37,12 +43,12 @@ export const Default: StoryObj<typeof ConversionForm> = {
     const switchButton = await canvas.findByTestId("SwitchCurrencyButton");
     await userEvent.click(switchButton);
     const submitButton = await canvas.findByText("Convert");
-
     await userEvent.click(submitButton);
 
     await waitFor(async () => {
-      await expect(args.onSubmit).toHaveBeenCalledTimes(1);
-      await expect(args.onSubmit.mock.calls[0][0]).toEqual({
+      await expect(onSubmit).toHaveBeenCalledTimes(1);
+      // @ts-expect-error
+      await expect(onSubmit.mock.calls[0][0]).toEqual({
         amount: 122,
         from: "EUR",
         to: "AED",
