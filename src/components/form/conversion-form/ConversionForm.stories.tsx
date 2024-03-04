@@ -6,6 +6,7 @@ import { expect, jest } from "@storybook/jest";
 const meta: Meta<typeof ConversionForm> = {
   component: ConversionForm,
   args: {
+    onSubmit: jest.fn(),
     defaultValues: {
       amount: 1000,
       from: "CZK",
