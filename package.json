@@ -34,7 +34,7 @@
     "@vercel/analytics": "^1.0.1",
     "chakra-react-select": "^4.6.0",
     "cheerio": "^1.0.0-rc.12",
-    "eslint": "8.56.0",
+    "eslint": "8.57.0",
     "eslint-config-next": "14.0.4",
     "framer-motion": "^11.0.0",
     "mathjs": "^12.0.0",
