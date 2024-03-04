@@ -172,7 +172,7 @@
       {
         "name": "storybook",
         "headCommitId": "b23e916b6842d18bd9a6166d5568691e62d33b98",
-        "updatedAt": "2024-03-04T14:01:32.331Z",
+        "updatedAt": "2024-03-04T14:38:42.744Z",
         "href": "renovate/eslint-plugin-storybook-0.x/storybook/b23e91",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/105",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-plugin-storybook-0.x/storybook/b23e91"
