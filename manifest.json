@@ -172,7 +172,7 @@
       {
         "name": "storybook",
         "headCommitId": "66b365c83427b296fc44bb485f50c58c4e313ff6",
-        "updatedAt": "2024-03-12T00:55:16.840Z",
+        "updatedAt": "2024-03-12T00:55:27.192Z",
         "href": "renovate/react-monorepo/storybook/66b365",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/111",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-monorepo/storybook/66b365"
