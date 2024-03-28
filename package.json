@@ -26,7 +26,7 @@
     "@emotion/styled": "^11.11.0",
     "@hookform/resolvers": "^3.1.1",
     "@prisma/client": "5.7.1",
-    "@storybook/addon-docs": "^7.6.6",
+    "@storybook/addon-docs": "^8.0.0",
     "@tanstack/react-query": "^4.29.25",
     "@types/node": "20.10.1",
     "@types/react": "18.2.61",
@@ -53,21 +53,21 @@
   },
   "devDependencies": {
     "@chakra-ui/storybook-addon": "^5.1.0",
-    "@storybook/addon-essentials": "^7.6.6",
-    "@storybook/addon-interactions": "^7.6.6",
-    "@storybook/addon-links": "^7.6.6",
-    "@storybook/addon-onboarding": "^1.0.10",
-    "@storybook/blocks": "^7.6.6",
+    "@storybook/addon-essentials": "^8.0.0",
+    "@storybook/addon-interactions": "^8.0.0",
+    "@storybook/addon-links": "^8.0.0",
+    "@storybook/addon-onboarding": "^8.0.0",
+    "@storybook/blocks": "^8.0.0",
     "@storybook/jest": "^0.2.3",
-    "@storybook/nextjs": "^7.6.6",
-    "@storybook/react": "^7.6.6",
+    "@storybook/nextjs": "^8.0.0",
+    "@storybook/react": "^8.0.0",
     "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/react-text-mask": "^5.4.11",
     "babel-plugin-istanbul": "^6.1.1",
     "eslint-plugin-storybook": "^0.6.15",
     "serve": "^14.2.1",
-    "storybook": "^7.6.6"
+    "storybook": "^8.0.0"
   },
   "resolutions": {
     "cli-table3": "^0.6.3"
