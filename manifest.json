@@ -167,18 +167,6 @@
       }
     ]
   },
-  "renovate/framer-motion-11.x-lockfile": {
-    "apps": [
-      {
-        "name": "storybook",
-        "headCommitId": "f935d355ec7be362ca33b4600196e3fedff28733",
-        "updatedAt": "2024-04-19T14:43:32.017Z",
-        "href": "renovate/framer-motion-11.x-lockfile/storybook/f935d3",
-        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/115",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/framer-motion-11.x-lockfile/storybook/f935d3"
-      }
-    ]
-  },
   "renovate/prisma-monorepo": {
     "apps": [
       {
