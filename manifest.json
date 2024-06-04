@@ -172,7 +172,7 @@
       {
         "name": "storybook",
         "headCommitId": "b5b984e5697ea74ed0519e7e8141b2c3dbd818b2",
-        "updatedAt": "2024-06-04T13:16:34.260Z",
+        "updatedAt": "2024-06-04T16:50:07.955Z",
         "href": "renovate/prisma-monorepo/storybook/b5b984",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/116",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/prisma-monorepo/storybook/b5b984"
