@@ -51,11 +51,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "2dc857322da99efc8fd4798228e380c9434c7d29",
-        "updatedAt": "2024-07-24T13:09:55.299Z",
-        "href": "renovate/node-20.x/storybook/2dc857",
+        "headCommitId": "f1dbc213b5fe8d73678f952807509eec2373cd22",
+        "updatedAt": "2024-07-28T11:18:01.088Z",
+        "href": "renovate/node-20.x/storybook/f1dbc2",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/83",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/2dc857"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/f1dbc2"
       }
     ]
   },
