@@ -147,11 +147,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "d9954dead8280d70d98a7bb1c276da127b9bac05",
-        "updatedAt": "2024-09-16T10:43:22.527Z",
-        "href": "renovate/react-monorepo/storybook/d9954d",
+        "headCommitId": "7f022b843f32c8b4b72d49be6c55f4d91fd42392",
+        "updatedAt": "2024-09-17T10:53:10.537Z",
+        "href": "renovate/react-monorepo/storybook/7f022b",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/111",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-monorepo/storybook/d9954d"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-monorepo/storybook/7f022b"
       }
     ]
   },
