@@ -190,5 +190,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/cli-table3-0.x-lockfile/storybook/c40bc4"
       }
     ]
+  },
+  "renovate/npm-next-vulnerability": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "9a038b89b4b8ae247a6c79c5f91b8dc95608d476",
+        "updatedAt": "2024-10-15T05:18:11.720Z",
+        "href": "renovate/npm-next-vulnerability/storybook/9a038b",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/120",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-next-vulnerability/storybook/9a038b"
+      }
+    ]
   }
 }
