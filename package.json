@@ -65,7 +65,7 @@
     "@storybook/testing-library": "^0.2.2",
     "@types/react-text-mask": "^5.4.11",
     "babel-plugin-istanbul": "^6.1.1",
-    "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-storybook": "^0.10.0",
     "serve": "^14.2.1",
     "storybook": "^7.6.6"
   },
