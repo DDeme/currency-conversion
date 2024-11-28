@@ -160,7 +160,7 @@
       {
         "name": "storybook",
         "headCommitId": "a1cb4454c321c03e6c749075211c12a39ef35bc8",
-        "updatedAt": "2024-11-28T10:21:37.281Z",
+        "updatedAt": "2024-11-28T13:57:44.625Z",
         "href": "renovate/storybook-test-runner-0.x/storybook/a1cb44",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/114",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/storybook-test-runner-0.x/storybook/a1cb44"
