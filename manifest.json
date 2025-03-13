@@ -171,11 +171,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "dcd6daa223b66afe43e7cd821a6e98a6faed65de",
-        "updatedAt": "2025-03-11T12:27:28.859Z",
-        "href": "renovate/prisma-monorepo/storybook/dcd6da",
+        "headCommitId": "7c4c328efd755b63a4862af0ed848b355e977e07",
+        "updatedAt": "2025-03-13T15:59:28.343Z",
+        "href": "renovate/prisma-monorepo/storybook/7c4c32",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/116",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/prisma-monorepo/storybook/dcd6da"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/prisma-monorepo/storybook/7c4c32"
       }
     ]
   },
