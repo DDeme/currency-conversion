@@ -135,11 +135,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "129f9b1a169c30907ab39bb707ef36c631cf5e53",
-        "updatedAt": "2024-12-21T02:27:44.947Z",
-        "href": "renovate/react-hook-form-7.x-lockfile/storybook/129f9b",
+        "headCommitId": "3b72eb70b04d62d3d6a50831996432730fbab444",
+        "updatedAt": "2025-03-28T22:24:39.185Z",
+        "href": "renovate/react-hook-form-7.x-lockfile/storybook/3b72eb",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/110",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-hook-form-7.x-lockfile/storybook/129f9b"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-hook-form-7.x-lockfile/storybook/3b72eb"
       }
     ]
   },
