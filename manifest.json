@@ -100,7 +100,7 @@
       {
         "name": "storybook",
         "headCommitId": "783073f443db1f6c0481b44da9999aa03c5446dc",
-        "updatedAt": "2025-08-10T13:17:14.223Z",
+        "updatedAt": "2025-08-10T13:20:00.749Z",
         "href": "renovate/emotion-monorepo/storybook/783073",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/117",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/emotion-monorepo/storybook/783073"
