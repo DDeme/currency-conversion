@@ -183,11 +183,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "51414538dc4d65bad1ec0355d291a5fffca4f4da",
-        "updatedAt": "2025-08-10T13:16:30.236Z",
-        "href": "renovate/npm-next-vulnerability/storybook/514145",
+        "headCommitId": "29d91f13acba018895a37519b85aebaeb761346f",
+        "updatedAt": "2025-08-13T17:42:22.346Z",
+        "href": "renovate/npm-next-vulnerability/storybook/29d91f",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/120",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-next-vulnerability/storybook/514145"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-next-vulnerability/storybook/29d91f"
       }
     ]
   }
