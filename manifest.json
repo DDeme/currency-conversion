@@ -16,7 +16,7 @@
       {
         "name": "storybook",
         "headCommitId": "cc807ffe95651d03f78584e241b18a720f8955c1",
-        "updatedAt": "2026-04-19T14:02:53.080Z",
+        "updatedAt": "2026-04-19T14:06:23.041Z",
         "href": "renovate/major-tanstack-query-monorepo/storybook/cc807f",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/41",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-tanstack-query-monorepo/storybook/cc807f"
