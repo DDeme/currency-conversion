@@ -52,7 +52,7 @@
       {
         "name": "storybook",
         "headCommitId": "b187213d5ff19c09ae122c3e6390fe0db0666d2d",
-        "updatedAt": "2026-05-11T22:37:56.764Z",
+        "updatedAt": "2026-05-18T19:11:39.224Z",
         "href": "renovate/node-20.x/storybook/b18721",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/83",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/node-20.x/storybook/b18721"
