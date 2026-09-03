@@ -202,5 +202,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-storybook-vulnerability/storybook/96944c"
       }
     ]
+  },
+  "renovate/eslint-monorepo": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "56dd13e2e743d80a3d222dbf1d78791038c35a5f",
+        "updatedAt": "2026-09-03T15:37:36.596Z",
+        "href": "renovate/eslint-monorepo/storybook/56dd13",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/123",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-monorepo/storybook/56dd13"
+      }
+    ]
   }
 }
