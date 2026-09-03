@@ -172,7 +172,7 @@
       {
         "name": "storybook",
         "headCommitId": "c40bc4e7caddc554736ace37d297ac90533de4bd",
-        "updatedAt": "2026-09-03T15:47:48.470Z",
+        "updatedAt": "2026-09-03T15:51:45.830Z",
         "href": "renovate/cli-table3-0.x-lockfile/storybook/c40bc4",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/118",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/cli-table3-0.x-lockfile/storybook/c40bc4"
