@@ -196,7 +196,7 @@
       {
         "name": "storybook",
         "headCommitId": "53925dac0db52cb3387d389d16ebeb0de38dbc49",
-        "updatedAt": "2026-09-19T12:09:39.332Z",
+        "updatedAt": "2026-09-19T12:11:33.990Z",
         "href": "renovate/npm-storybook-vulnerability/storybook/53925d",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/121",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-storybook-vulnerability/storybook/53925d"
