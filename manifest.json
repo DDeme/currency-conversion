@@ -99,11 +99,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "0592db0b704be4716d8d0a29c592d4f404889b67",
-        "updatedAt": "2026-09-15T15:59:57.001Z",
-        "href": "renovate/emotion-monorepo/storybook/0592db",
+        "headCommitId": "e4ca99a6dcdd4d406113564e5958cfdeebcdcd9f",
+        "updatedAt": "2026-10-01T05:31:34.207Z",
+        "href": "renovate/emotion-monorepo/storybook/e4ca99",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/117",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/emotion-monorepo/storybook/0592db"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/emotion-monorepo/storybook/e4ca99"
       }
     ]
   },
