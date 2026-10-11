@@ -124,7 +124,7 @@
       {
         "name": "storybook",
         "headCommitId": "1131888e2b3e9165accbac3ccb887dd8e32e3893",
-        "updatedAt": "2026-10-11T13:28:33.147Z",
+        "updatedAt": "2026-10-11T13:30:48.329Z",
         "href": "renovate/react-hook-form-7.x-lockfile/storybook/113188",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/110",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/react-hook-form-7.x-lockfile/storybook/113188"
