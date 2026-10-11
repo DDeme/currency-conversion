@@ -15,11 +15,11 @@
     "apps": [
       {
         "name": "storybook",
-        "headCommitId": "642e2897fa6c72144a3bfd42011c2dab705b5fa8",
-        "updatedAt": "2026-10-05T18:19:13.671Z",
-        "href": "renovate/major-tanstack-query-monorepo/storybook/642e28",
+        "headCommitId": "bc411f7211a392b5bc6a9bffab1b9995983f3e97",
+        "updatedAt": "2026-10-11T21:05:08.613Z",
+        "href": "renovate/major-tanstack-query-monorepo/storybook/bc411f",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/41",
-        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-tanstack-query-monorepo/storybook/642e28"
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/major-tanstack-query-monorepo/storybook/bc411f"
       }
     ]
   },
