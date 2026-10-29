@@ -202,5 +202,17 @@
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/eslint-monorepo/storybook/56dd13"
       }
     ]
+  },
+  "renovate/npm-zod-vulnerability": {
+    "apps": [
+      {
+        "name": "storybook",
+        "headCommitId": "1f6b61c3f03e04bb6ef03a8eb68b62a98bb16646",
+        "updatedAt": "2026-10-29T16:51:02.210Z",
+        "href": "renovate/npm-zod-vulnerability/storybook/1f6b61",
+        "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/125",
+        "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-zod-vulnerability/storybook/1f6b61"
+      }
+    ]
   }
 }
