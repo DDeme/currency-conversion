@@ -208,7 +208,7 @@
       {
         "name": "storybook",
         "headCommitId": "1f6b61c3f03e04bb6ef03a8eb68b62a98bb16646",
-        "updatedAt": "2026-11-06T11:36:22.985Z",
+        "updatedAt": "2026-11-07T09:47:23.558Z",
         "href": "renovate/npm-zod-vulnerability/storybook/1f6b61",
         "pullRequestUrl": "https://github.com/DDeme/currency-conversion/pull/125",
         "githubPagesUrl": "https://DDeme.github.io/currency-conversion/renovate/npm-zod-vulnerability/storybook/1f6b61"
